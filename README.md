@@ -1,2 +1,0 @@
-# chaehwanli.github.io
-blog
