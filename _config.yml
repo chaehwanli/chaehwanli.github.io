@@ -17,7 +17,7 @@ remote_theme: just-the-docs/just-the-docs
 # in the templates via {{ site.myvariable }}.
 title: To the SPACE
 description: The blog for documentations
-baseurl: "/just-the-docs" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://chaehwanli.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 permalink: pretty
@@ -67,7 +67,7 @@ heading_anchors: true
 # Aux links for the upper right navigation
 aux_links:
   "Just the Docs on GitHub":
-    - "//chaehwanli.github.io/just-the-docs/"
+    - "//chaehwanli.github.io/"
 
 # Makes Aux links open in a new tab. Default is false
 aux_links_new_tab: false
@@ -94,7 +94,7 @@ last_edit_time_format: "%b %e %Y at %I:%M %p" # uses ruby's time format: https:/
 # Footer "Edit this page on GitHub" link text
 gh_edit_link: true # show or hide edit this page link
 gh_edit_link_text: "Edit this page on GitHub"
-gh_edit_repository: "https://chaehwanli.github.com/just-the-docs/" # the github URL for your repo
+gh_edit_repository: "https://chaehwanli.github.com/" # the github URL for your repo
 gh_edit_branch: "main" # the branch that your docs is served from
 # gh_edit_source: docs # the source that your files originate from
 gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into the editor immediately
