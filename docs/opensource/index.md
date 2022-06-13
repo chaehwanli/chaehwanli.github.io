@@ -3,7 +3,7 @@ layout: default
 title : OpenSource
 nav_order : 2
 has_children : true
-permalink : /docs/menu_opensource
+permalink : /docs/opensource
 ---
 
 # OpenSource
