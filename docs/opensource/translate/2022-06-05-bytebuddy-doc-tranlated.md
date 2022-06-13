@@ -1,6 +1,7 @@
 ---
-layout : post
+layout : default
 title : bytebuddy tutorial 한국어 번역
+parent : Translate
 ---
 
 

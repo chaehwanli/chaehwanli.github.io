@@ -1,5 +1,5 @@
 ---
-layout : post
+layout : default
 title : translate junit5 user guide doc
 parent: Translate
 ---

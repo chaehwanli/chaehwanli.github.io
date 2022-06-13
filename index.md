@@ -12,7 +12,7 @@ permalink: /
 It is blog for documents what is studying.
 {: .fs-6 .fw-300 }
 
-[Get Started now](#getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [View it on GitHub](https://github.com/just-the-docs/just-the-docs){: .btn .fs-5 .mb-4 .mb-md-0 }
+[Get Started now](#getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [View it on GitHub](https://github.com/chaehwanli/chaehwanli.github.io){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ---
 ## Getting started

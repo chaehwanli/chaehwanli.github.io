@@ -1,0 +1,9 @@
+@startuml
+actor Client
+node "API Server" as apiserver
+node "Engine Server" as engineserver
+
+Client -> apiserver : CLI
+apiserver -> engineserver : AMQP
+
+@enduml

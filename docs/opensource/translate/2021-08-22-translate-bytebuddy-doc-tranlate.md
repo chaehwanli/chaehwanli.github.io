@@ -1,5 +1,5 @@
 ---
-layout : post
+layout : default
 title : translate bytebuddy doc
 parent: Translate
 ---

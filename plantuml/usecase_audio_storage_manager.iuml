@@ -1,0 +1,60 @@
+@startuml
+left to right direction
+
+actor AuthorizedUser as recorder
+actor AudioDownloader as audiodownloader
+actor Storage as storage
+
+rectangle "audio storage manager system" {
+    together {
+        usecase login
+        usecase authorization
+    }
+    together {
+        usecase registryAudio
+        usecase downloadAudio
+        usecase previewAudio
+        usecase deleteAudio
+        usecase searchAudio
+
+    }
+    together {
+        usecase addMetaData
+        usecase readMetaData
+        usecase updateMetaData
+        usecase deleteMetaData
+    }
+    together {
+        usecase downloadStorageData
+    }
+}
+
+registryAudio -[hidden]- login
+registryAudio -[hidden]- addMetaData
+addMetaData -[hidden]- downloadStorageData
+
+
+recorder --> registryAudio
+registryAudio -right-> login : <<included>>
+login -right-> authorization : <<included>>
+registryAudio .right.> addMetaData : <<included>>
+registryAudio .right.> updateMetaData : <<extened>>
+
+audiodownloader --> searchAudio
+searchAudio .> authorization : <<included>>
+searchAudio .> readMetaData : <<included>>
+
+recorder --> previewAudio
+previewAudio .> authorization : <<included>>
+previewAudio .> readMetaData : <<included>>
+
+audiodownloader --> downloadAudio
+downloadAudio .> authorization : <<included>>
+downloadAudio .> readMetaData : <<included>>
+downloadAudio .> downloadStorageData : <<included>>
+downloadStorageData --> storage
+
+recorder --> deleteAudio
+deleteAudio -> deleteMetaData : <<included>>
+
+@enduml
