@@ -1,7 +1,7 @@
 ---
 layout: default
 title : Translate
-parent: menu_opensource
+parent: OpenSource
 nav_order : 2
 ---
 
