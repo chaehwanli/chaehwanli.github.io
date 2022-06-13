@@ -1,6 +1,6 @@
 ---
 layout : default
-title : bytebuddy tutorial 한국어 번역
+title : bytebuddy doc korean
 parent : Translate
 ---
 
