@@ -1,8 +1,7 @@
 ---
 layout: default
 title : Mockito
-parent: opensource
-nav_order : 1
+parent: OpenSource
 ---
 
 # Mockito
