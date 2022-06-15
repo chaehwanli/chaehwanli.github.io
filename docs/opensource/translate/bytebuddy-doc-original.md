@@ -1,6 +1,6 @@
 ---
 layout : default
-title : bytebuddy doc original
+title : bytebuddydocoriginal
 parent: Translate
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout : default
-title : junit5 user guide korean
+title : junit5userguidekorean
 parent: Translate
 ---
 
