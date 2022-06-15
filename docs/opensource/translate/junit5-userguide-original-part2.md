@@ -2,6 +2,7 @@
 layout : default
 title : junit5 user guide doc original part2
 parent: Translate
+grand_parent : OpenSource
 ---
 
 이 페이지는 [Junit5](https://junit.org/junit5/docs/current/user-guide/) 에 정리되어 있는 document를 한국어로 번역해 보기 위해서 만든 페이지이다.
