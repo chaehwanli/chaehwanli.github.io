@@ -1,7 +1,8 @@
 ---
 layout : default
-title : bytebuddydocoriginal
+title : bytebuddy doc original
 parent: Translate
+grand_parent : OpenSource
 ---
 
 이 페이지는 Byte Buddy 에 정리되어 있는 document를 한국어로 번역해 보기 위해서 만든 페이지이다.

@@ -2,6 +2,7 @@
 layout: default
 title : Translate
 parent: OpenSource
+has_childern : true
 nav_order : 2
 ---
 

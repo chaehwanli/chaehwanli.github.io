@@ -1,7 +1,8 @@
 ---
 layout : default
-title : junit5userguidekorean
+title : junit5 user guide korean
 parent: Translate
+grand_parent : OpenSource
 ---
 
 [Original Junit5 User Guide](https://junit.org/junit5/docs/current/user-guide/)

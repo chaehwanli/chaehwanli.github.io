@@ -1,6 +1,6 @@
 ---
 layout : default
-title : bytebuddydockorean
+title : bytebuddy doc korean
 parent : Translate
 ---
 
