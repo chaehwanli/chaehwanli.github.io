@@ -1,6 +1,6 @@
 ---
 layout : default
-title : quic network simulator
+title : quic network simulator korean
 parent: QUIC
 grand_parent : OpenSource
 ---
