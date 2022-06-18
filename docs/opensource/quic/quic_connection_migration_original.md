@@ -15,10 +15,10 @@ grand_parent : OpenSource
 4. Review
 
 # Connection Migration in QUIC
-[github](https://tools.ietf.org/id/draft-tan-quic-connection-migration-00.html)
+[connection migration](https://tools.ietf.org/id/draft-tan-quic-connection-migration-00.html)
 
 번역 목표로 하는 페이지
-1. [README.md](https://tools.ietf.org/id/draft-tan-quic-connection-migration-00.html)
+1. [connection migration](https://tools.ietf.org/id/draft-tan-quic-connection-migration-00.html)
 > 
 * chrome 번역- 22/06/18
 * 부자연스러운 번역 수정- 22/06/18
