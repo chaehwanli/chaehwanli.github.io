@@ -1,6 +1,6 @@
 ---
 layout : default
-title : Connection Migration in QUIC eng
+title : Multipath Extensions for QUIC eng
 parent: QUIC
 grand_parent : OpenSource
 ---

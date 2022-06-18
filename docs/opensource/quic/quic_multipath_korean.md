@@ -1,6 +1,6 @@
 ---
 layout : default
-title : Connection Migration in QUIC korean
+title : Multipath Extensions for QUIC korean
 parent: QUIC
 grand_parent : OpenSource
 ---
