@@ -1,6 +1,6 @@
 ---
 layout : default
-title : QUIC Discovery eng
+title : QUIC Discovery in chrome eng
 parent: QUIC
 grand_parent : OpenSource
 ---
