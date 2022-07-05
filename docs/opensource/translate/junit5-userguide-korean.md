@@ -1187,7 +1187,7 @@ class TestingAStackDemo {
 
 IDE에서 이 예제를 실행할 때 GUI의 테스트 실행 트리는 다음 이미지와 유사하게 보일 것입니다.
 
-![error window](..\images\junit5_guide_writing-tests_nested_test_ide.png)
+![error window](../images/junit5_guide_writing-tests_nested_test_ide.png)
 _Executing a nested test in an IDE_
 
 이 예에서 외부 테스트의 전제 조건은 설정 코드에 대한 계층적 수명 주기 메소드를 정의하여 내부 테스트에서 사용됩니다. 예를 들어 `createNewStack()`은 정의된 테스트 클래스와 정의된 클래스 아래의 중첩 트리의 모든 수준에서 사용되는 `@BeforeEach` 수명 주기 메소드입니다.
