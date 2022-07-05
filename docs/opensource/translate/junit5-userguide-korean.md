@@ -1187,7 +1187,7 @@ class TestingAStackDemo {
 
 IDE에서 이 예제를 실행할 때 GUI의 테스트 실행 트리는 다음 이미지와 유사하게 보일 것입니다.
 
-![error window](../images/junit5_guide_writing-tests_nested_test_ide.png)
+![error window](../../images/junit5_guide_writing-tests_nested_test_ide.png)
 _Executing a nested test in an IDE_
 
 이 예에서 외부 테스트의 전제 조건은 설정 코드에 대한 계층적 수명 주기 메소드를 정의하여 내부 테스트에서 사용됩니다. 예를 들어 `createNewStack()`은 정의된 테스트 클래스와 정의된 클래스 아래의 중첩 트리의 모든 수준에서 사용되는 `@BeforeEach` 수명 주기 메소드입니다.
@@ -2762,7 +2762,7 @@ junit.jupiter.execution.parallel.mode.classes.default = same_thread
 
 다음 다이어그램은 클래스당 두 개의 테스트 메소드가 있는 두 개의 최상위 테스트 클래스 A와 B의 실행이 `junit.jupiter.execution.parallel.mode.default` 및 `junit.jupiter.execution.parallel.mode.classes.default`의 네 가지 조합 모두에 대해 어떻게 작동하는지 보여줍니다. (첫 번째 열의 레이블 참조).
 
-![junit5_guide_writing-tests_execution_mode](../images/junit5_guide_writing-tests_execution_mode.svg)
+![junit5_guide_writing-tests_execution_mode](../../images/junit5_guide_writing-tests_execution_mode.svg)
 
 *기본 실행 모드 구성 조합*
 
@@ -4322,7 +4322,7 @@ public class MyTestTemplateInvocationContextProvider
 다음 다이어그램은 사용자 제공 코드와 확장 코드의 상대적 순서를 보여줍니다. 사용자 제공 테스트 및 수명 주기 method는 주황색으로 표시되고 콜백 코드는 파란색으로 표시된 확장으로 구현됩니다. 회색 상자는 단일 테스트 메소드의 실행을 나타내며 테스트 클래스의 모든 테스트 메소드에 대해 반복됩니다.
 
 extensions lifecycle
-![image](../images/junit5_guide_extensions_lifecycle.png)
+![image](../../images/junit5_guide_extensions_lifecycle.png)
 *User code and extension code*
 
 다음 표에서는 `사용자 코드 및 확장 코드 다이어그램`의 16단계에 대해 자세히 설명합니다.
@@ -4526,7 +4526,7 @@ class DatabaseTestsDemo extends AbstractDatabaseTests {
 
 다음 시퀀스 다이어그램은 `DatabaseTestsDemo` 테스트 클래스가 실행될 때 `JupiterTestEngine` 내에서 실제로 무슨 일이 일어나는지 더 자세히 설명하는 데 도움이 됩니다.
 
-![image](../images/juni5_guide_extensions_DatabaseTestsDemo.png)
+![image](../../juni5_guide_extensions_DatabaseTestsDemo.png)
 *DatabaseTestsDemo*
 
 JUnit Jupiter는 단일 테스트 클래스 또는 테스트 인터페이스 내에서 선언된 여러 수명 주기 메소드의 실행 순서를 **보장하지 않습니다**. JUnit Jupiter가 알파벳 순서로 이러한 메소드를 호출하는 것처럼 보일 수 있습니다. 그러나 그것은 정확히 사실이 아닙니다. 순서는 단일 테스트 클래스 내에서 `@Test` 메소드의 순서와 유사합니다.
@@ -4606,7 +4606,7 @@ Extension1.afterEach()
 
 다음 시퀀스 다이어그램은 `BrokenLifecycleMethodConfigDemo` 테스트 클래스가 실행될 때 `JupiterTestEngine` 내에서 실제로 무슨 일이 일어나는지 더 자세히 설명하는 데 도움이 됩니다.
 
-![image](../images/junit5_guide_extensions_BrokenLifecycleMethodConfigDemo.png)
+![image](../../images/junit5_guide_extensions_BrokenLifecycleMethodConfigDemo.png)
 *BrokenLifecycleMethodConfigDemo*
 
 >앞서 언급한 동작으로 인해 JUnit 팀은 개발자가 이러한 수명 주기 메소드 간에 종속성이 없는 경우를 제외하고 테스트 클래스 또는 테스트 인터페이스별로 각 유형의 *수명 주기 메소드*(`테스트 클래스 및 메소드` 참조)를 최대 하나씩 선언할 것을 권장합니다.
@@ -5506,4 +5506,4 @@ Artifacts for final releases and milestones are deployed to Maven Central, and s
 
 ### 10.3. Dependency Diagram
 component diagram
-![image](../images/juni5_guide_component-diagram.svg)
+![image](../../images/juni5_guide_component-diagram.svg)
