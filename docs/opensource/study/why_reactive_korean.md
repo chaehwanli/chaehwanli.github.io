@@ -1,7 +1,7 @@
 ---
 layout : default
 title : Why Reactive 번역
-parent : study
+parent : Study
 grand_parent : OpenSource
 ---
 
