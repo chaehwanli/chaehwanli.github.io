@@ -5,7 +5,7 @@ parent : Learning web application development with python
 grand_parent : Write a book with ChatGPT 
 ---
 
-##목차
+## 목차
 
 1. 파이썬 소개 및 개발 환경 설정
 2. 웹 어플리케이션 개념 소개 및 기초 지식 설명
