@@ -3,7 +3,7 @@ layout: default
 title : Write a book with ChatGPT
 nav_order : 3
 has_children : true
-permalink : /docs/Write_a_book_with_ChatGPT
+permalink : /docs/writeabookwithchatgpt
 ---
 
 # Write a book with ChatGPT

@@ -1,8 +1,8 @@
 ---
 layout : default
 title : Table of Contents
-parent : Learning_web_application_development_with_python
-grand_parent : Write_a_book_with_ChatGPT
+parent : learningwebapplicationdevelopmentwithpython
+grand_parent : writeabookwithchatgpt
 nav_order : 1
 ---
 
