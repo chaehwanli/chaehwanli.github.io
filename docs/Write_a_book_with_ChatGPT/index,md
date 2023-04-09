@@ -1,0 +1,14 @@
+---
+layout: default
+title : Write a book with ChatGPT
+nav_order : 2
+has_children : true
+permalink : /docs/Write_a_book_with_ChatGPT
+---
+
+# Writing Book
+{: .no_toc }
+
+Write a book with ChatGPT
+ChatGPT와 함께 책을 써보자
+{: .fs-6 .fw-300 }
