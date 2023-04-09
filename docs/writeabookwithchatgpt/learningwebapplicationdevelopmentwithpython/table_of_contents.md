@@ -1,8 +1,8 @@
 ---
 layout : default
 title : Table of Contents
-parent : learningwebapplicationdevelopmentwithpython
-grand_parent : writeabookwithchatgpt 
+parent : Learning web application development with python
+grand_parent : Write a book with ChatGPT 
 ---
 
 ##목차
