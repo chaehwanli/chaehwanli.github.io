@@ -3,7 +3,7 @@ layout: default
 title : Learning web application development with python
 parent: Write_a_book_with_ChatGPT
 has_children : true
-nav_order : 2
+nav_order : 1
 ---
 
 # Learning web application development with python
