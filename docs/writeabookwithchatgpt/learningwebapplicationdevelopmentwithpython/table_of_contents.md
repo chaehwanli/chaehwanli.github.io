@@ -2,8 +2,7 @@
 layout : default
 title : Table of Contents
 parent : learningwebapplicationdevelopmentwithpython
-grand_parent : writeabookwithchatgpt
-nav_order : 1
+nav_order : 2
 ---
 
 ##목차

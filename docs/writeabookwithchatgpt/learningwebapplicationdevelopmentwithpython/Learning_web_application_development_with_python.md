@@ -1,7 +1,7 @@
 ---
 layout: default
 title : Learning web application development with python
-parent: learningwebapplicationdevelopmentwithpython
+parent: writeabookwithchatgpt
 has_children : true
 nav_order : 1
 ---

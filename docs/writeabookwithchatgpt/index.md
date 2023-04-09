@@ -10,5 +10,6 @@ permalink : /docs/writeabookwithchatgpt
 {: .no_toc }
 
 Write a book with ChatGPT
+
 ChatGPT와 함께 책을 써보자
 {: .fs-6 .fw-300 }
