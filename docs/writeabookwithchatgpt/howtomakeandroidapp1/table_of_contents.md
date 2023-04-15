@@ -14,7 +14,7 @@ grand_parent : Write a book with ChatGPT
     1. [안드로이드 앱 개발 개요](./chapter1.md#안드로이드-앱-개발-개요)
     2. [개발 환경 구축하기](./chapter1.md#개발-환경-구축하기)
     3. [안드로이드 스튜디오 설치하기](./chapter1.md#안드로이드-스튜디오-설치하기)
-    4. [앱 개발을 위한 기본 지식](./chapter1.md#안드로이드-앱-개발-개요)
+    4. [앱 개발을 위한 기본 지식](./chapter1.md#앱-개발을-위한-기본-지식)
 
 2. Naver Map API 기본 개념
 
