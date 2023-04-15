@@ -24,13 +24,13 @@ grand_parent : Write a book with ChatGPT
     4. [지도 제어하기](./chapter2.md#지도-제어하기)
     5. [마커와 인포윈도우 추가하기](./chapter2.md#마커와-인포윈도우-추가하기)
 
-3.  KB부동산 아파트 실거래가 제공 서비스 활용하기
+3.  [KB부동산 아파트 실거래가 제공 서비스 활용하기](./chapter3.md)
 
-    1. KB부동산 아파트 실거래가 제공 서비스 소개
-    2. API 인증키 발급받기
-    3. API 요청하기
-    4. API 응답 받기
-    5. 응답 데이터 가공하기
+    1. [KB부동산 아파트 실거래가 제공 서비스 소개](./chapter3.md#kb부동산-아파트-실거래가-제공-서비스-소개)
+    2. [API 인증키 발급받기](./chapter3.md#api-인증키-발급받기)
+    3. [API 요청하기](./chapter3.md#api-요청하기)
+    4. [API 응답 받기](./chapter3.md#api-응답-받기)
+    5. [응답 데이터 가공하기](./chapter3.md#응답-데이터-가공하기)
 
 4. 안드로이드 앱에서 KB부동산 API와 Naver Map API 활용하기
 
