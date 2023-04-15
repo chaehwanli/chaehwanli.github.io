@@ -34,10 +34,10 @@ grand_parent : Write a book with ChatGPT
 
 4. [안드로이드 앱에서 KB부동산 API와 Naver Map API 활용하기](./chapter4.md)
 
-    1. Retrofit을 이용한 KB부동산 API 호출
-    2. 응답 데이터 처리하기
-    3. Naver Map API와 연동하기
-    4. 지도에 아파트 실거래가 정보 표시하기
+    1. [Retrofit을 이용한 KB부동산 API 호출](./chapter4.md#retrofit을-이용한-kb부동산-api-호출)
+    2. [응답 데이터 처리하기](./chapter4.md#응답-데이터-처리하기)
+    3. [Naver Map API와 연동하기](./chapter4.md#naver-map-api와-연동하기)
+    4. [지도에 아파트 실거래가 정보 표시하기](./chapter4.md#지도에-아파트-실거래가-정보-표시하기)
 
 5. [안드로이드 앱 기능 추가하기](./chapter5.md)
 
