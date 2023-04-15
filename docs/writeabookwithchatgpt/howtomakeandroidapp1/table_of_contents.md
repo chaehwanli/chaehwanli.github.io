@@ -55,9 +55,9 @@ grand_parent : Write a book with ChatGPT
 
 7. [안드로이드 앱 배포하기](./chapter7.md)
 
-    1. 앱 서명하기
-    2. Google Play Console에 앱 등록하기
-    3. 앱 출시하기
+    1. [앱 서명하기](./chapter7.md#앱-서명하기)
+    2. [Google Play Console에 앱 등록하기](./chapter7.md#google-play-console에-앱-등록하기)
+    3. [앱 출시하기](./chapter7.md#앱-출시하기)
 
 8. [앱 유지보수와 개선](./chapter8.md)
 
