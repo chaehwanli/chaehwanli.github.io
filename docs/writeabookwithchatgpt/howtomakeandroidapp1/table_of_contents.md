@@ -61,9 +61,9 @@ grand_parent : Write a book with ChatGPT
 
 8. [앱 유지보수와 개선](./chapter8.md)
 
-    1. 앱 유지보수의 중요성
-    2. 안드로이드 앱 버전 업데이트 방법
-    3. 사용자 피드백 받기
-    4. 앱 개선하기
+    1. [앱 유지보수의 중요성](./chapter8.md#앱-유지보수의-중요성)
+    2. [안드로이드 앱 버전 업데이트 방법](./chapter8.md#안드로이드-앱-버전-업데이트-방법)
+    3. [사용자 피드백 받기](./chapter8.md#사용자-피드백-받기)
+    4. [앱 개선하기](./chapter8.md#앱-개선하기)
 
 9. KB부동산 API, Naver Map API, Retrofit 참고 자료
