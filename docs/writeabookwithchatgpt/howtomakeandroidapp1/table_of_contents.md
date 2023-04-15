@@ -16,13 +16,13 @@ grand_parent : Write a book with ChatGPT
     3. [안드로이드 스튜디오 설치하기](./chapter1.md#안드로이드-스튜디오-설치하기)
     4. [앱 개발을 위한 기본 지식](./chapter1.md#앱-개발을-위한-기본-지식)
 
-2. Naver Map API 기본 개념
+2. [Naver Map API 기본 개념](./chapter2.md)
 
-    1. Naver Map API 소개
-    2. API 키 발급하기
-    3. 지도 표시하기
-    4. 지도 제어하기
-    5. 마커와 인포윈도우 추가하기
+    1. [Naver Map API 소개](./chapter2.md#naver-map-api-소개)
+    2. [API 키 발급하기](./chapter2.md#api-키-발급하기)
+    3. [지도 표시하기](./chapter2.md#지도-표시하기)
+    4. [지도 제어하기](./chapter2.md#지도-제어하기)
+    5. [마커와 인포윈도우 추가하기](./chapter2.md#마커와-인포윈도우-추가하기)
 
 3.  KB부동산 아파트 실거래가 제공 서비스 활용하기
 
