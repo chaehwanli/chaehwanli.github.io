@@ -339,3 +339,113 @@ private void getApartments(double lat, double lon) {
 ```
 
 위와 같은 방식으로 사용자의 현재 위치 정보를 얻어와서 KB부동산 API에 전달하면 됩니다. 이때, 위치 권한을 사용자로부터 받아오기 위해 ActivityCompat.requestPermissions() 메서드를 이용해서 권한 요청 대화상자를 띄우는 작업이 필요합니다. 또한, 위치 정보를 얻어올 수 없는 경우에 대한 예외 처리도 필요합니다.
+
+사용자의 현재 위치를 가져오기 위해서는 위치 권한이 필요합니다. 따라서 위치 권한을 사용자로부터 받아오는 코드를 작성해야 합니다.
+
+먼저, Manifest 파일에 위치 권한을 추가해줍니다.
+``` xml
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+```
+
+그 다음, 위치 정보를 받아오기 위한 LocationManager 객체와 위치 권한 체크를 위한 checkSelfPermission 메서드를 사용합니다.
+
+``` java
+// 위치 정보를 받아올 때 사용할 LocationManager 객체 생성
+LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+
+// 위치 권한 체크
+if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+    // 권한이 없을 경우 권한 요청 다이얼로그를 띄웁니다.
+    ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, PERMISSIONS_REQUEST_LOCATION);
+} else {
+    // 권한이 있을 경우, requestLocationUpdates 메서드를 통해 위치 정보를 받아옵니다.
+    locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, locationListener);
+}
+```
+
+위 코드에서는 checkSelfPermission 메서드를 사용하여 위치 권한이 있는지 확인합니다. 만약 권한이 없다면 requestPermissions 메서드를 사용하여 권한 요청 다이얼로그를 띄워줍니다.
+
+위 코드에서 requestLocationUpdates 메서드를 호출하여 위치 정보를 받아오는데, 이 때 위치 정보를 받아올 때마다 호출되는 LocationListener 객체를 등록해야 합니다.
+
+``` java
+// 위치 정보가 변경될 때마다 호출되는 LocationListener 객체 생성
+LocationListener locationListener = new LocationListener() {
+    @Override
+    public void onLocationChanged(Location location) {
+        // 위치 정보를 받아왔을 때 처리하는 코드 작성
+    }
+
+    @Override
+    public void onStatusChanged(String provider, int status, Bundle extras) {
+
+    }
+
+    @Override
+    public void onProviderEnabled(String provider) {
+
+    }
+
+    @Override
+    public void onProviderDisabled(String provider) {
+
+    }
+};
+```
+
+안드로이드에서 위치 정보를 얻어오는 과정에서 사용자의 위치 정보를 가져올 수 없는 경우에는 SecurityException이 발생할 수 있습니다. 이 경우에는 예외 처리를 통해 사용자에게 알림을 제공하거나 다른 처리를 수행할 수 있습니다.
+
+예를 들어, 위치 정보를 얻어오는 코드 블록에서 try-catch 문을 이용하여 SecurityException을 처리할 수 있습니다. 예외 처리에서는 사용자에게 알림을 제공할 수도 있고, 기본 위치 정보를 사용하거나 이전에 저장된 위치 정보를 사용할 수도 있습니다.
+
+다음은 예외 처리 코드의 예시입니다.
+``` java
+private void getLocation() {
+    try {
+        locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+        locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 0, 0, this);
+    } catch (SecurityException e) {
+        e.printStackTrace();
+        // 위치 정보를 가져올 수 없는 경우에 대한 처리
+    }
+}
+```
+
+위 코드에서 requestLocationUpdates 메서드를 호출할 때 SecurityException이 발생할 수 있습니다. 이를 예외 처리해줍니다. 예외가 발생할 경우 printStackTrace() 메서드를 이용하여 로그를 출력하거나, Toast를 이용하여 사용자에게 메시지를 띄워줄 수 있습니다.
+
+위치 정보를 가져올 수 없는 경우에는 사용자가 앱의 기능을 이용하지 못할 수 있으므로, 이에 대한 예외 처리는 중요합니다.
+
+GPS 신호가 약해서 위치정보를 얻어올 수 없는 경우에는 LocationManager 클래스의 requestLocationUpdates() 메서드로 위치 정보를 업데이트할 때 LocationListener 객체를 등록하고, onLocationChanged() 메서드에서 위치 정보를 얻어와서 처리할 수 있습니다.
+
+하지만 GPS 신호가 약한 경우, onLocationChanged() 메서드가 호출되지 않을 수 있습니다. 이 경우에 대비해서 LocationListener 인터페이스에는 onProviderDisabled()와 onProviderEnabled() 메서드가 있습니다. 이를 활용하여 GPS 신호가 약한 경우를 대비할 수 있습니다.
+
+예를 들어, 아래와 같이 LocationListener 객체를 구현하고 onProviderDisabled() 메서드에서 GPS 신호가 약해진 경우를 처리할 수 있습니다.
+
+``` java
+private final LocationListener mLocationListener = new LocationListener() {
+    @Override
+    public void onLocationChanged(Location location) {
+        // 위치 정보가 업데이트되면 호출되는 메서드
+        double latitude = location.getLatitude();
+        double longitude = location.getLongitude();
+        // 위치 정보를 활용한 작업 수행
+    }
+
+    @Override
+    public void onProviderDisabled(String provider) {
+        // 위치 제공자가 비활성화될 때 호출되는 메서드
+        // GPS 신호가 약해진 경우 등에 대비하여 처리 가능
+        Toast.makeText(getApplicationContext(), "GPS 신호가 약합니다", Toast.LENGTH_LONG).show();
+    }
+
+    @Override
+    public void onProviderEnabled(String provider) {
+        // 위치 제공자가 활성화될 때 호출되는 메서드
+    }
+
+    @Override
+    public void onStatusChanged(String provider, int status, Bundle extras) {
+        // 위치 제공자의 상태가 변경될 때 호출되는 메서드
+    }
+};
+```
+
+위와 같이 onProviderDisabled() 메서드에서 GPS 신호가 약한 경우에 대한 처리를 하면, 앱 사용자들이 약한 GPS 신호로 인한 불편을 최소화할 수 있습니다.

@@ -48,10 +48,10 @@ grand_parent : Write a book with ChatGPT
 
 6. [안드로이드 앱 UI 디자인](./chapter6.md)
 
-    1. UI 디자인 개요
-    2. UI 요소 구성하기
-    3. UI 구성하기
-    4. UI 적용하기
+    1. [UI 디자인 개요](./chapter6.md#ui-디자인-개요)
+    2. [UI 요소 구성하기](./chapter6.md#ui-요소-구성하기)
+    3. [UI 구성하기](./chapter6.md#ui-구성하기)
+    4. [UI 적용하기](./chapter6.md#ui-적용하기)
 
 7. [안드로이드 앱 배포하기](./chapter7.md)
 
