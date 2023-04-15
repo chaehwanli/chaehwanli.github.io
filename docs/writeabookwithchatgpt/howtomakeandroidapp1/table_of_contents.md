@@ -66,4 +66,8 @@ grand_parent : Write a book with ChatGPT
     3. [사용자 피드백 받기](./chapter8.md#사용자-피드백-받기)
     4. [앱 개선하기](./chapter8.md#앱-개선하기)
 
-9. KB부동산 API, Naver Map API, Retrofit 참고 자료
+9. [KB부동산 API, Naver Map API, Retrofit 참고 자료](./chapter9.md)
+
+    1. [KB부동산 API](./chapter9.md#kb부동산-api)
+    2. [Naver Map API](./chapter9.md#naver-map-api)
+    3. [Retrofit](./chapter9.md#retrofit)
