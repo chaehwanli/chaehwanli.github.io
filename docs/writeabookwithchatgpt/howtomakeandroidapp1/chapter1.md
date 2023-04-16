@@ -1,6 +1,6 @@
 ---
 layout : default
-title : chapter1
+title : Chapter 1. 안드로이드 앱 기본 개념
 parent : How to make android app with KB api and naver map api
 grand_parent : Write a book with ChatGPT 
 ---

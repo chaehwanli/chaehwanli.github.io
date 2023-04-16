@@ -1,6 +1,6 @@
 ---
 layout : default
-title : chapter2
+title : Chapter 2. Naver Map API 기본 개념
 parent : How to make android app with KB api and naver map api
 grand_parent : Write a book with ChatGPT 
 ---

@@ -1,11 +1,11 @@
 ---
 layout : default
-title : chapter3
+title : Chapter 3. KB부동산 아파트 실거래가 제공 서비스 활용하기
 parent : How to make android app with KB api and naver map api
 grand_parent : Write a book with ChatGPT 
 ---
 
-# Chapter 3.  KB부동산 아파트 실거래가 제공 서비스 활용하기
+# Chapter 3. KB부동산 아파트 실거래가 제공 서비스 활용하기
 KB부동산은 부동산 거래 정보와 시세 등의 부동산 정보를 제공하는 대표적인 부동산 정보 제공 업체입니다. KB부동산은 실제 아파트 거래 실적을 바탕으로 한 실거래가 정보를 제공하며, 이러한 정보를 활용해서 안드로이드 앱을 개발할 수 있습니다.
 
 안드로이드 앱에서 KB부동산의 실거래가 정보를 활용하면 사용자들은 원하는 지역과 아파트의 정보를 입력하고 해당 아파트의 실거래가 정보를 확인할 수 있습니다. 이를 통해 부동산 거래 시 참고할 가격 정보를 미리 파악할 수 있으며, 실제 거래 시 현재 시장 가격에 대한 정보를 보다 정확하게 파악할 수 있습니다.

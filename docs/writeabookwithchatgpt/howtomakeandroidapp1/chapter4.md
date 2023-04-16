@@ -1,6 +1,6 @@
 ---
 layout : default
-title : chapter4
+title : Chapter 4. 안드로이드 앱에서 KB부동산 API와 Naver Map API 활용하기
 parent : How to make android app with KB api and naver map api
 grand_parent : Write a book with ChatGPT 
 ---

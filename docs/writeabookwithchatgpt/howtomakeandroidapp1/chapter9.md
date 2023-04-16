@@ -1,11 +1,11 @@
 ---
 layout : default
-title : chapter9
+title : Chapter 9. KB부동산 API, Naver Map API, Retrofit 참고 자료
 parent : How to make android app with KB api and naver map api
 grand_parent : Write a book with ChatGPT 
 ---
 
-# Chapter9. KB부동산 API, Naver Map API, Retrofit 참고 자료
+# Chapter 9. KB부동산 API, Naver Map API, Retrofit 참고 자료
 
 ## KB부동산 API
 KB부동산 API 참고 자료를 확인할 수 있는 사이트는 다음과 같습니다.

@@ -1,11 +1,11 @@
 ---
 layout : default
-title : chapter8
+title : Chapter 8. 앱 유지보수와 개선
 parent : How to make android app with KB api and naver map api
 grand_parent : Write a book with ChatGPT 
 ---
 
-# Chapter8. 앱 유지보수와 개선
+# Chapter 8. 앱 유지보수와 개선
 안드로이드 앱을 출시하고 나면, 앱의 유지보수와 개선이 필요해집니다. 앱의 유지보수는 안정적인 동작과 보안을 유지하는 것을 목표로 합니다. 이를 위해서는 앱이 다양한 기기와 운영체제 버전에서 정상적으로 동작하도록 유지해야 합니다. 유지보수를 위해 코드의 버그 수정, 새로운 기능 추가, UI 개선 등의 작업이 필요합니다.
 
 앱의 개선은 사용자 경험을 향상시키는 것을 목표로 합니다. 이를 위해 기능 추가, UI/UX 개선, 성능 개선 등의 작업이 필요합니다. 또한, 새로운 기기나 운영체제 버전에 대한 대응도 필요합니다.
