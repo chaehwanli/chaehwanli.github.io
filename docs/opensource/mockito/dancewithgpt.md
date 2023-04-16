@@ -1,7 +1,7 @@
 ---
 layout : default
 title : dance with gpt
-parent: mockito
+parent: Mockito
 grand_parent : OpenSource
 ---
 
