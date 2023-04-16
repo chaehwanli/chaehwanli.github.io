@@ -1,11 +1,11 @@
 ---
 layout : default
-title : Chpater 5. 안드로이드 앱 기능 추가하기
+title : Chapter 5. 안드로이드 앱 기능 추가하기
 parent : How to make android app with KB api and naver map api
 grand_parent : Write a book with ChatGPT 
 ---
 
-# Chpater 5. 안드로이드 앱 기능 추가하기
+# Chapter 5. 안드로이드 앱 기능 추가하기
 안드로이드 앱에 기능을 추가하려고 할 때 고려해야 하는 것은 다양합니다. 
 
 - 첫째, 사용자가 필요로 하는 기능과 편의성입니다. 사용자 요구사항을 파악하고 그에 맞게 기능을 구현해야 합니다. 
