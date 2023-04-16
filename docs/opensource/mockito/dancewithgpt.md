@@ -107,3 +107,48 @@ public class CalculatorTest {
 11. Build and run the project to ensure that everything is working correctly.
 
 I hope this helps you get started with unit testing in Android using Mockito 5.3.0. If you have any questions or need further assistance, please let me know!
+
+## Could you share the test code for spying object?
+
+Here's an example of how to use Mockito to spy on an object and verify its behavior in a unit test:
+
+``` java
+import org.junit.jupiter.api.Test;
+import org.mockito.Mockito;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import static org.junit.Assert.assertEquals;
+import static org.mockito.Mockito.*;
+
+public class ExampleTest {
+
+    @Test
+    public void testSpyingObject() {
+        // Create a new list object and spy on it
+        List<String> list = new ArrayList<>();
+        List<String> spyList = Mockito.spy(list);
+
+        // Call the add() method on the spy object
+        spyList.add("hello");
+
+        // Verify that the add() method was called on the spy object
+        verify(spyList).add("hello");
+
+        // Verify that the size of the spy object is 1
+        assertEquals(1, spyList.size());
+
+        // Replace the second element of the spy object
+        doReturn("world").when(spyList).get(1);
+
+        // Verify that the second element of the spy object was replaced
+        assertEquals("world", spyList.get(1));
+    }
+}
+```
+
+In this example, we create a new List object and spy on it using Mockito's spy() method. We then call the add() method on the spy object and verify that it was called using Mockito's verify() method. We also replace the second element of the spy object using Mockito's doReturn() method and verify that it was replaced.
+
+I hope this helps! Let me know if you have any further questions.
+
