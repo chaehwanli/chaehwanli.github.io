@@ -100,3 +100,6 @@ KB부동산 아파트 실거래가 검색하는 안드로이드 앱에 사용자
 1. KB부동산 API 참고 자료 에 대해서 참고할 사이트 정리해줘
 1. Naver Map API 참고 자료에 대해서 참고할 사이트 정리해줘
 1. Retrofit 에 대해 참고할 수 있는 한국어 site 정리해줘
+1. https://chaehwanli.github.io/docs/writeabookwithchatgpt/howtomakeandroidapp1/prompts/ 이 페이지의 질문들은 어떤 의도로 질문한 것인지 400자 넘는 길이로 요약해줘
+>해당 페이지의 질문들은 안드로이드 앱 개발과 관련된 여러 주제에 대한 질문들로 구성되어 있습니다. 예를 들어, Naver Map API와 KB부동산 API를 활용한 안드로이드 앱 개발 방법, Retrofit을 사용한 API 호출 및 데이터 처리 방법, 안드로이드 앱 UI 디자인 및 구현 방법, 그리고 앱 출시 및 유지보수에 대한 내용 등이 포함되어 있습니다. 이러한 질문들은 안드로이드 앱 개발에 대한 기초부터 심화적인 내용까지 포괄하고 있으며, 해당 주제에 대해 학습하고자 하는 개발자들에게 유용한 정보를 제공하고 있습니다.
+1. https://chaehwanli.github.io/docs/writeabookwithchatgpt/howtomakeandroidapp1/table_of_contents/ 이 페이지의 목차들을 이용해서 책의 서문을 완성해줘. 400자 이상의 길이로 만들어줘
