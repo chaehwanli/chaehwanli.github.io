@@ -150,7 +150,7 @@ In this example, we create a new List object and spy on it using Mockito's spy()
 
 I hope this helps! Let me know if you have any further questions.
 
-## @InjectMocks 에 대한 테스트 예제 코드와 테스트 대상 코드를 만들고 코드에는 라인마다 주석을 추가해줘.&#x20;
+## @InjectMocks 에 대한 테스트 예제 코드와 테스트 대상 코드를 만들고 코드에는 라인마다 주석을 추가해줘.
 
 @InjectMocks는 Mockito에서 제공하는 어노테이션으로, 해당 어노테이션을 사용하면 Mockito가 자동으로 의존성 주입을 수행하여 테스트 대상 객체의 필드에 Mock 객체를 주입합니다. 이를 이용하면 간단하게 테스트 대상 객체를 테스트할 수 있습니다.
 
@@ -232,7 +232,7 @@ import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.when;
 
 import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
@@ -279,7 +279,3 @@ public class UserServiceTest {
 @Test 어노테이션을 사용하여 getUserById() 메소드를 테스트합니다. given, when, then 패턴을 사용하여 테스트 코드를 작성합니다.
 
 이렇게 작성된 코드는 UserService 클래스를 테스트하는데 필요한 의존성 객체인 UserRepository를 Mock 객체로 대체하여, UserService 객체를 주입받아 간단하게 테스트할 수 있습니다.
-
-
-
-
