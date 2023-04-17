@@ -175,6 +175,110 @@ public class UserService {
 
 위 코드는 UserRepository를 주입받아 User 객체를 반환하는 UserService 클래스입니다.
 
+```java
+// UserRepository 인터페이스
+public interface UserRepository {
+    User getUserById(int id);
+}
+```
+
+위 코드는 UserRepository 인터페이스입니다.
+
+```java
+public class User {
+    private String firstName;
+    private String lastName;
+
+    public User(String firstName, String lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == this) {
+            return true;
+        }
+        if (!(obj instanceof User)) {
+            return false;
+        }
+        User user = (User) obj;
+        return firstName.equals(user.firstName) && lastName.equals(user.lastName);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = 17;
+        result = 31 * result + firstName.hashCode();
+        result = 31 * result + lastName.hashCode();
+        return result;
+    }
+}
+```
+
+위 코드는 firstName과 lastName을 필드로 갖는 User 클래스입니다. 이 클래스는 UserService 클래스에서 반환되는 객체입니다.
+
+```java
+// UserServiceTest 클래스
+import static org.junit.Assert.assertEquals;
+import static org.mockito.Mockito.when;
+
+import org.junit.Before;
+import org.junit.Test;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
+
+public class UserServiceTest {
+    // Mock 객체 생성
+    @Mock
+    private UserRepository userRepository;
+
+    // UserService 객체에 Mock 객체를 주입
+    @InjectMocks
+    private UserService userService;
+
+    @Before
+    public void setUp() {
+        // Mock 객체 초기화
+        MockitoAnnotations.initMocks(this);
+    }
+
+    @Test
+    public void testGetUserById() {
+        // given
+        User user = new User("John", "Doe");
+
+        // UserRepository의 getUserById 메소드가 호출될 때, 위에서 생성한 user 객체를 반환하도록 설정
+        when(userRepository.getUserById(1)).thenReturn(user);
+
+        // when
+        User result = userService.getUserById(1);
+
+        // then
+        // UserRepository의 getUserById 메소드 호출 결과가 예상한 대로인지 확인
+        assertEquals(user, result);
+    }
+}
+```
+
+위 코드는 UserService 클래스를 테스트하는 UserServiceTest 클래스입니다.
+
+@Before 어노테이션을 사용하여 테스트를 실행하기 전 MockitoAnnotations.initMocks() 메소드를 호출하여 의존성 주입을 초기화합니다.
+
+@InjectMocks 어노테이션을 사용하여 userService 객체를 주입받습니다.
+
+@Test 어노테이션을 사용하여 getUserById() 메소드를 테스트합니다. given, when, then 패턴을 사용하여 테스트 코드를 작성합니다.
+
+이렇게 작성된 코드는 UserService 클래스를 테스트하는데 필요한 의존성 객체인 UserRepository를 Mock 객체로 대체하여, UserService 객체를 주입받아 간단하게 테스트할 수 있습니다.
 
 
 
