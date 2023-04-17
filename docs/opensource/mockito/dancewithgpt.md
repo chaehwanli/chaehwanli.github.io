@@ -48,6 +48,7 @@ I hope this helps you get started with sharing your Android project on GitHub. I
 1. In the "Create New Project" dialog, select "Empty Activity" and click "Next".
 1. Enter a project name, package name, and other details as required, and click "Finish".
 1. In the build.gradle file (Module: app), add the following dependencies to the dependencies section:
+
 ``` javascript
 dependencies {
     // ... other dependencies ...
@@ -57,6 +58,7 @@ dependencies {
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.2'
 }
 ```
+
 >This adds the JUnit and Mockito libraries to the project, which are required for writing and running unit tests. Note that we're using JUnit Jupiter (version 5.7.2) instead of the older JUnit 4.
 
 5. In the "Project" pane, expand the "app" folder and right-click on the "java" folder.
@@ -64,6 +66,7 @@ dependencies {
 1. Right-click on the new package and select "New" -> "Java Class".
 ![add java code](./images/add_calculor_java_code.png)
 1. Name the class "Calculator" and click "OK". Add the following code to the class:
+
 ``` java
 public class Calculator {
     public int add(int a, int b) {
@@ -76,6 +79,7 @@ public class Calculator {
 9. Right-click on the "com.example.mytest" package and select "New" -> "Java Class".
 ![add test code](./images/add_calculor_java_test_code.png)
 1. Name the class "CalculatorTest" and click "OK". Add the following code to the class:
+
 ``` java
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
