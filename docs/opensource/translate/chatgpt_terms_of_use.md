@@ -123,5 +123,3 @@ San Francisco, CA 94110
 
 (j) 공평한 구제책. 귀하는 귀하가 본 약관을 위반하거나 위반하는 경우 OpenAI 및 그 계열사에 돌이킬 수 없는 피해를 입힐 수 있으며, OpenAI는 다른 법적 구제책과 더불어 귀하를 상대로 금지명령 구제를 구할 권리를 가짐을 인정합니다.
 
-
-Translated with www.DeepL.com/Translator (free version)
