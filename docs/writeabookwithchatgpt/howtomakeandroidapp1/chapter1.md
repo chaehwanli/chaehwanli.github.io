@@ -91,14 +91,18 @@ Firebase는 Google에서 제공하는 모바일 및 웹 앱 개발 플랫폼입�
 
 RESTful API
 안드로이드 앱 개발에서 서버와의 통신은 RESTful API를 사용합니다. RESTful API는 HTTP를 기반으로 하는 웹 서비스의 아키텍처 스타일 중 하나로, 안드로이드 앱에서 서버와 데이터를 주고받기 위한 표준 방식입니다.
-Retrofit - RESTful API 호출을 쉽게 처리할 수 있는 라이브러리입니다.
+
+Retrofit
+RESTful API 호출을 쉽게 처리할 수 있는 라이브러리입니다.
 
 RxJava
 RxJava는 안드로이드 앱 개발에서 비동기적인 처리를 위해 사용되는 라이브러리입니다. RxJava를 사용하면 비동기적인 작업을 간편하게 처리할 수 있습니다.
 
-Glide - 이미지 로딩에 사용되는 라이브러리로, 이미지 리사이징, 캐싱 등의 기능을 제공합니다.
+Glide
+이미지 로딩에 사용되는 라이브러리로, 이미지 리사이징, 캐싱 등의 기능을 제공합니다.
 
-Room - 안드로이드 SQLite 데이터베이스의 추상화 라이브러리로, ORM(Object-Relational Mapping) 기능을 제공합니다.
+Room
+안드로이드 SQLite 데이터베이스의 추상화 라이브러리로, ORM(Object-Relational Mapping) 기능을 제공합니다.
 
 AndroidX
 안드로이드 개발에 필수적인 라이브러리로, 안드로이드 API와 호환성이 높은 기능을 제공합니다.

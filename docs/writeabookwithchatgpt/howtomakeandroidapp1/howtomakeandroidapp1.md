@@ -1,7 +1,7 @@
 ---
 layout: default
 title : How to make android app with KB api and naver map api
-parent: Write a book with ChatGPT
+parent: None - Write a book with ChatGPT
 has_children : true
 nav_order : 2
 ---
