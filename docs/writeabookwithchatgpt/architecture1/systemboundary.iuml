@@ -1,0 +1,28 @@
+@startuml
+left to right direction
+
+actor User
+
+package "System Boundary" {
+  [User Interface(UI)]
+  [Voice Recognition & Processing]
+  [Text Processing]
+  [Image & Video Processing]
+  [Smart Home Control]
+  [Messaging & Communication]
+  [Schedule Management]
+  [Data Storage & Management]
+  [Multilingual Processing]
+}
+
+User --> [User Interface(UI)]
+User --> [Voice Recognition & Processing]
+User --> [Text Processing]
+User --> [Image & Video Processing]
+User --> [Smart Home Control]
+User --> [Messaging & Communication]
+User --> [Schedule Management]
+User --> [Data Storage & Management]
+User --> [Multilingual Processing]
+
+@enduml

@@ -1,0 +1,42 @@
+``` staruml
+@startuml
+left to right direction
+
+actor User
+
+package {
+top to bottom direction
+usecase "1. 정보 검색 및 답변 제공" as UseCase1
+usecase "2. 메모 생성 및 관리" as UseCase2
+usecase "3. 스마트 홈 제어" as UseCase3
+usecase "4. 다중 언어 지원" as UseCase4
+usecase "5. 일정 관리 및 알림" as UseCase5
+usecase "6. 커뮤니케이션 및 메시징" as UseCase6
+}
+User --> UseCase1
+User --> UseCase2
+User --> UseCase3
+User --> UseCase4
+User --> UseCase5
+User --> UseCase6
+
+UseCase1 <.. UseCase4 : <<extend>>
+UseCase1 <.. UseCase5 : <<extend>>
+
+UseCase2 <.. UseCase1 : <<include>>
+
+UseCase3 <.. UseCase1 : <<include>>
+
+UseCase4 <.. UseCase2 : <<extend>>
+UseCase4 <.. UseCase3 : <<extend>>
+
+UseCase5 <.. UseCase1 : <<include>>
+UseCase5 <.. UseCase2 : <<extend>>
+
+UseCase6 <.. UseCase1 : <<include>>
+UseCase6 <.. UseCase5 : <<extend>>
+
+@enduml
+```
+
+![image png](./images/usecase_diagram.png)
